@@ -2,96 +2,104 @@
 /* root  */
 :root {
     --brand-color: #2196F3;
-
-}
+    --brand-black: #212121;
+    --brand-grey: #757575;
+    --main-font-weight: 700;
+    --dark-background: #2F303A;
+} 
+/* задаем шрифт , цвет и размер всему тексту */
 .all-body {
-    font-family: Roboto, 'Times New Roman', Times, serif ;
-    color: #212121;
+    font-family: Roboto, Arial, Helvetica, sans-serif ;
+    font-weight: var(--main-font-weight);
+    color: var(--brand-black);
 }
-/* Стили для body */
+
+/* убираем декорацию при посещении */
 .all-body a:visited {
 text-decoration: none;
 color: none;
 }
 
-
+/* убираем декорацию для всех ссылок */
 .all-body a { 
 text-decoration: none;
 }
 
+/* Задаём размер заголовка "чем мы занимаемся" */
 .all-body h2 {
-font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 36px ;
-font-weight: 700;
 text-align: center;    
 }
+
+/* задаем размер заголовков "наши приемущества"  */
 .all-body h3 {
-font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 14px ;
-font-weight: 700;
+
 }
 
 /* Логотип  */
+/* задает логотипу шрифт и размер */
 .main-logo {
 font-family: Raleway, Arial, Helvetica, sans-serif ;
+font-weight: var(--main-font-weight);
 font-size: 26px ;
-font-weight: 700;
 color:var(--brand-color) ;
 }
-
-
+/* Цвет "WEB" */
 .logo {
 color: #2196F3;
 }
-
+/* цвет "STUDIO" вверху */
 .studio-up{
-    color: black;
+    color:var(--brand-black);
 }
 
+/* цвет "STUDIO" внизу */
 .studio-down {
-    color: #F5F4FA;
+    color:white;
 }
 
 
 /* Стили header */
+
+/* задаёт стиль текста в навигации */
 .heder-navigation {
-font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 14px ;
 font-weight: 500; 
-color: black;
+color: var(--brand-black);
 }
 
-
-.navigation-link{
-color:black;
+/* Стиль ссылок  в навигации */
+.navigation-link a {
+color:var(--brand-black);
 text-decoration: none;
 }
 
-.navigation-link:hover {
-color:#2196F3;
+.navigation-link a:hover {
+color:var(--brand-color);
 }
-.navigation-link:focus {
-color:#2196F3;
+.navigation-link a:focus {
+color:var(--brand-color);
 }
 
-.navigation-contacts{
-color: #757575;
+/* стиль контактов в навигации */
+.navigation-contacts a {
+color: var(--brand-grey);
 text-decoration: none;
 }
-.navigation-contacts:hover {
-color: #2196F3;
+.navigation-contacts a:hover {
+color: var(--brand-color);
 }
-.navigation-contacts:focus {
-color: #2196F3;
+.navigation-contacts a:focus {
+color: var(--brand-color);
 }
 
 
 
 
-/* кнопка "заказать услугу" */
+/*  стиль кнопки "заказать услугу" */
 .order-button {
 background-color:var(--brand-color);
-font-family:Roboto, Arial, Helvetica, sans-serif ;
 font-size: 16px;
 font-weight: 900;
 color: white;
@@ -102,100 +110,107 @@ cursor: pointer;
 
 /* Титульный текст */
 .page-title {
-font-family:Roboto, Arial, Helvetica, sans-serif ;
 font-size: 44px ;
 font-weight: 900;
 text-align: center;
 color:white;    
 }
 
+/* задаёт фон титульному тексту */
 .main-title {
-    background-color: #2F303A;
+    background-color: var(--dark-background);
 }
 
 
-
+/* стиль основного  текста  */
 .our-advantage-text p {
-font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 14px ;
-font-weight: 400;    
+font-weight: 400;
+color: #757575;    
 } 
 
+/* отключает точки в списках */
+.what-we-do-img , .our-team-list , .filter-button-list , .navigation-link , .navigation-contacts , .our-project-list {
+    list-style: none;
+}
 
+
+/* Фон секции "наша команда" */
 .our-team {
 background-color: #F5F4FA;
 }
 
+/* размер текста "наша команда" */
 .our-team-title {
-font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 36px ;
-font-weight: 700;
+
 }
+
+/* Задаёт стиль именам людей и именам проектов */
 .worker-name , .project-name {
-font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 16px ;
 font-weight: 500;
 text-align: center;
 }
 
+/* задаёт стиль специализациям работников и специализациям проектов  */
 .worker-specialization , .project-specialization  {
-font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 16px ;
 font-weight: 400;
-color: #757575;
+color: var(--brand-grey);
 text-align: center;
 }
 
 /* Стили footer */
 
-.down-block {
-    color: #F5F4FA;
-}
-
+/* задаёт стиль адресу в футере */
 .footer-address {
-font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 14px ;
 font-weight: 400;
 font-style: normal;
 color: white;    
 }
 
+/* задаёт стиль контактам в футере */
 .footer-contacts {
 text-decoration: none;
-color: #757575;
+color: var(--brand-grey);
 }
+
 
 .footer-contacts:hover {
 color:var(--brand-color) ;
 }
+
+
 .footer-contacts:focus {
 color:var(--brand-color) ;
 }
 
-
-
+/* задаёт фон в футере */
 footer {
-    background-color: #2F303A;
+    background-color: var(--dark-background);
 }
 
 
 
 /* исключительно для портфолио  */
-
-.filter-button{
-background-color: #F5F4FA;
-font-family:Roboto, Arial, Helvetica, sans-serif ;
+ 
+/* стиль фильтр-кнопок Портфолио */
+.filter-button {
+font-family: Roboto, Arial, Helvetica, sans-serif ;
+background-color: white;
 font-size: 16px;
 font-weight: 500;
-color:black;  
+color:var(--brand-black);  
 }
 
-.filter-button button:hover {
+.filter-button:hover {
     color: white;
     background-color:var(--brand-color);
     cursor: pointer;
 }
-.filter-button button:active {
+.filter-button:active {
     color: white;
     background-color:var(--brand-color);
     cursor: pointer;
