@@ -1,16 +1,14 @@
 
-
+/* root  */
 :root {
     --brand-color: #2196F3;
+
 }
 .all-body {
     font-family: Roboto, 'Times New Roman', Times, serif ;
-    /* background-color: #EEEEEE; */
     color: #212121;
 }
-
-
-
+/* Стили для body */
 .all-body a:visited {
 text-decoration: none;
 color: none;
@@ -32,6 +30,8 @@ font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 14px ;
 font-weight: 700;
 }
+
+/* Логотип  */
 .main-logo {
 font-family: Raleway, Arial, Helvetica, sans-serif ;
 font-size: 26px ;
@@ -39,48 +39,79 @@ font-weight: 700;
 color:var(--brand-color) ;
 }
 
+
 .logo {
 color: #2196F3;
 }
 
-.main-logo span {
-font-family: Raleway, Arial, Helvetica, sans-serif ;
-font-size: 26px ;
-font-weight: 700;
-color:black;
+.studio-up{
+    color: black;
+}
+
+.studio-down {
+    color: #F5F4FA;
 }
 
 
-.heder-nav {
+/* Стили header */
+.heder-navigation {
 font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 14px ;
 font-weight: 500; 
 color: black;
 }
 
-.nav-address{
-color: #757575;
-text-decoration: none;
-}
-.nav-address:hover {
-color: #2196F3;
-}
-.nav-address:focus {
-color: #2196F3;
-}
 
-.nav-nav{
+.navigation-link{
 color:black;
 text-decoration: none;
 }
 
-.nav-nav:hover {
+.navigation-link:hover {
 color:#2196F3;
 }
-.nav-nav:focus {
+.navigation-link:focus {
 color:#2196F3;
 }
 
+.navigation-contacts{
+color: #757575;
+text-decoration: none;
+}
+.navigation-contacts:hover {
+color: #2196F3;
+}
+.navigation-contacts:focus {
+color: #2196F3;
+}
+
+
+
+
+/* кнопка "заказать услугу" */
+.order-button {
+background-color:var(--brand-color);
+font-family:Roboto, Arial, Helvetica, sans-serif ;
+font-size: 16px;
+font-weight: 900;
+color: white;
+margin: 0 auto;
+display: block;
+cursor: pointer;
+}
+
+/* Титульный текст */
+.page-title {
+font-family:Roboto, Arial, Helvetica, sans-serif ;
+font-size: 44px ;
+font-weight: 900;
+text-align: center;
+color:white;    
+}
+
+.main-title {
+    background-color: #2F303A;
+}
 
 
 
@@ -89,7 +120,6 @@ font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 14px ;
 font-weight: 400;    
 } 
-
 
 
 .our-team {
@@ -101,14 +131,14 @@ font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 36px ;
 font-weight: 700;
 }
-.spec-name {
+.worker-name , .project-name {
 font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 16px ;
 font-weight: 500;
 text-align: center;
 }
 
-.specialization {
+.worker-specialization , .project-specialization  {
 font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 16px ;
 font-weight: 400;
@@ -116,7 +146,13 @@ color: #757575;
 text-align: center;
 }
 
-.footer address {
+/* Стили footer */
+
+.down-block {
+    color: #F5F4FA;
+}
+
+.footer-address {
 font-family: Roboto, Arial, Helvetica, sans-serif ;
 font-size: 14px ;
 font-weight: 400;
@@ -124,61 +160,29 @@ font-style: normal;
 color: white;    
 }
 
-.footer-a a {
+.footer-contacts {
 text-decoration: none;
 color: #757575;
 }
 
-.footer-a a:hover {
+.footer-contacts:hover {
 color:var(--brand-color) ;
 }
-.footer-a a:focus {
+.footer-contacts:focus {
 color:var(--brand-color) ;
 }
 
-.main-black-section {
-    background-color: #2F303A;
-}
-
-
-.main-pre {
-font-family:Roboto, Arial, Helvetica, sans-serif ;
-font-size: 44px ;
-font-weight: 900;
-text-align: center;
-color:white;    
-}
-
-.button-order {
-background-color:var(--brand-color);
-font-family:Roboto, Arial, Helvetica, sans-serif ;
-font-size: 16px;
-font-weight: 900;
-color: white;
-margin: 0 auto;
-display: block;
-cursor: pointer;
-}
 
 
 footer {
     background-color: #2F303A;
 }
 
-.main-logo-footer {
- font-family: Raleway, Arial, Helvetica, sans-serif ;
-font-size: 26px ;
-font-weight: 700;
-color:var(--brand-color) ;
-}
 
-.main-logo-footer span {
-    color: white;
-}
 
 /* исключительно для портфолио  */
 
-.button-span-p button{
+.filter-button{
 background-color: #F5F4FA;
 font-family:Roboto, Arial, Helvetica, sans-serif ;
 font-size: 16px;
@@ -186,12 +190,12 @@ font-weight: 500;
 color:black;  
 }
 
-.button-span-p button:hover {
+.filter-button button:hover {
     color: white;
     background-color:var(--brand-color);
     cursor: pointer;
 }
-.button-span-p button:active {
+.filter-button button:active {
     color: white;
     background-color:var(--brand-color);
     cursor: pointer;
