@@ -14,6 +14,10 @@
     color: var(--brand-black);
 }
 
+.all-body ul {
+    list-style-type: none;
+}
+
 /* убираем декорацию при посещении */
 .all-body a:visited {
 text-decoration: none;
@@ -130,7 +134,7 @@ color: #757575;
 } 
 
 /* отключает точки в списках */
-.what-we-do-img , .our-team-list , .filter-button-list , .navigation-link , .navigation-contacts , .our-project-list {
+.what-we-do-img , .our-team-list , .filter-button-list , .navigation-link , .navigation-contacts , .our-project-list , .our-advantage-text {
     list-style: none;
 }
 
